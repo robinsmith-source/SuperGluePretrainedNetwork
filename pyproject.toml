@@ -1,0 +1,16 @@
+[project]
+name = "supergluepretrainednetwork"
+version = "0.1.0"
+requires-python = ">=3.11"
+dependencies = [
+    "matplotlib>=3.1.3",
+    "torch>=1.1.0",
+    "opencv-python>=4.1.2",
+    "numpy>=1.18.1",
+]
+
+[tool.setuptools.packages.find]
+include = ["models*"]
+
+[tool.setuptools.package-data]
+models = ["weights/*.pth"]
